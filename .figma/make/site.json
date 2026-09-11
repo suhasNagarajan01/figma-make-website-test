@@ -1,0 +1,10 @@
+{
+  "description": "This study app allows users to organize and update their data in a tree structure, featuring a modern UI and a competitive leaderboard for motivation.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
