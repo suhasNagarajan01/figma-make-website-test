@@ -35,9 +35,13 @@ export default defineConfig(({ mode }) => {
       strictPort: true,
       watch: { ignored: ['**/.figma/**'] },
     },
-    preview: {
+preview: {
       host: process.env.FIGMA_DEV_SERVER_HOST || '0.0.0.0',
       port: parseInt(process.env.PORT || '8443'),
+      allowedHosts: [
+        'figma-make-website-test.onrender.com',
+        '.onrender.com', // Allows any Render domain/subdomain
+      ],
     },
   }
 })
